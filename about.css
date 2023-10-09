@@ -1,0 +1,303 @@
+.aboutus-child {
+  position: absolute;
+  top: calc(50% - 251.5px);
+  left: calc(50% - 12.5px);
+  width: 709px;
+  height: 908px;
+}
+.aboutus-item {
+  position: absolute;
+  top: calc(50% - 448.5px);
+  left: calc(50% - 696.5px);
+  border-radius: 50%;
+  background-color: #bd97bc;
+  filter: blur(300px);
+  width: 576px;
+  height: 576px;
+}
+.lorem-ipsum-dolor1 {
+  position: absolute;
+  top: calc(50% + 180.72px);
+  left: calc(50% - 480.5px);
+  font-size: var(--font-size-3xl);
+  font-family: var(--bodytext);
+  display: inline-block;
+  width: 915px;
+  height: 129.78px;
+}
+.person-3 {
+  position: absolute;
+  top: calc(50% + 102.84px);
+  left: calc(50% + 267.5px);
+  line-height: 88.5%;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 138px;
+  height: 26.96px;
+}
+.person-2 {
+  position: absolute;
+  top: calc(50% + 102.84px);
+  left: calc(50% - 95.5px);
+  line-height: 88.5%;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 138px;
+  height: 26.96px;
+}
+.person-1 {
+  position: absolute;
+  top: calc(50% + 102.84px);
+  left: calc(50% - 452.5px);
+  line-height: 88.5%;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 132px;
+  height: 26.96px;
+}
+.aboutus-inner {
+  position: absolute;
+  top: calc(50% - 170.7px);
+  left: calc(50% + 209.5px);
+  border-radius: 50%;
+  background-color: var(--color-black);
+  width: 255px;
+  height: 254.58px;
+}
+.aboutus-child1 {
+  position: absolute;
+  top: calc(50% - 170.7px);
+  left: calc(50% - 150.5px);
+  border-radius: 50%;
+  background-color: var(--color-black);
+  width: 255px;
+  height: 254.58px;
+}
+.aboutus-child2 {
+  position: absolute;
+  top: calc(50% - 170.7px);
+  left: calc(50% - 509.5px);
+  border-radius: 50%;
+  background-color: var(--color-black);
+  width: 255px;
+  height: 254.58px;
+}
+.aboutus-child3 {
+  position: absolute;
+  top: calc(50% - 257.12px);
+  left: calc(50% + 163px);
+  width: 346.5px;
+  height: 22.09px;
+}
+.about-us4 {
+  position: absolute;
+  top: calc(50% - 292.5px);
+  left: calc(50% - 174.5px);
+  font-size: var(--h1-size);
+  line-height: 88.5%;
+  font-weight: 500;
+  display: inline-block;
+  width: 302px;
+  height: 70.88px;
+}
+.aboutus-child4 {
+  position: absolute;
+  top: calc(50% - 257.62px);
+  left: calc(50% - 555.5px);
+  width: 346.5px;
+  height: 22.09px;
+}
+.aboutus {
+  position: absolute;
+  top: calc(50% - 530.5px);
+  left: calc(50% - 673px);
+  width: 1393px;
+  height: 897px;
+}
+.footer-child14 {
+  position: absolute;
+  top: calc(50% - 104px);
+  left: calc(50% - 720px);
+  background-color: var(--color-black);
+  width: 1440px;
+  height: 208px;
+}
+.fleo-inc-all9 {
+  position: absolute;
+  top: calc(50% + 63px);
+  left: calc(50% - 532px);
+}
+.footer-child15 {
+  position: absolute;
+  top: calc(50% + 49.5px);
+  left: calc(50% - 532.5px);
+  border-top: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  width: 1066px;
+  height: 1px;
+}
+.instagram-icon9 {
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% + 482px);
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+.facebook-icon9 {
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% + 425px);
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+.youtube-icon9 {
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% + 368px);
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+.twitter-icon9 {
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% + 311px);
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+.social9 {
+  position: absolute;
+  top: calc(50% - 63px);
+  left: calc(50% + 458px);
+  font-weight: 500;
+  font-family: var(--font-mplus-1p);
+}
+.at-fleo-we9 {
+  position: absolute;
+  top: calc(50% - 64px);
+  left: calc(50% - 529px);
+  font-size: var(--font-size-base);
+  font-family: var(--bodytext);
+  display: inline-block;
+  width: 357px;
+  height: 97px;
+}
+.fleo13 {
+  position: absolute;
+  top: calc(50% - 94px);
+  left: calc(50% - 532px);
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.footer9 {
+  position: absolute;
+  top: calc(50% + 366.5px);
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 208px;
+  font-size: var(--bodytext-size);
+  color: var(--color-white);
+}
+.login-button-child2 {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 43px);
+  border-radius: var(--br-31xl);
+  background-color: var(--color-steelblue-100);
+  width: 86px;
+  height: 50px;
+}
+.login7 {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 21px);
+}
+.login-button4 {
+  text-decoration: none;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% + 457px);
+  width: 86px;
+  height: 50px;
+  color: inherit;
+}
+.info9 {
+  text-decoration: none;
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% + 362px);
+  color: inherit;
+}
+.dashboard11 {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% + 183px);
+}
+.navbar-child2 {
+  position: absolute;
+  top: 13px;
+  left: 568px;
+  background-color: var(--color-sienna);
+  filter: blur(20px);
+  width: 76px;
+  height: 25px;
+}
+.about-us5 {
+  text-decoration: none;
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% + 25px);
+  color: inherit;
+}
+.home5 {
+  text-decoration: none;
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 108px);
+  color: inherit;
+}
+.fleo14 {
+  text-decoration: none;
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 543px);
+  color: inherit;
+}
+.navbar9 {
+  position: absolute;
+  top: calc(50% - 524.5px);
+  left: calc(50% - 532px);
+  width: 1086px;
+  height: 50px;
+  font-size: var(--font-size-xl);
+}
+.about {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1149px;
+  overflow: hidden;
+  opacity: 0;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--color-black);
+  font-family: var(--h1);
+}
+.about.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-top;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

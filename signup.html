@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mplus 1p:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="signup" data-animate-on-scroll>
+      <div class="signup1">
+        <div class="signup-child"></div>
+        <button class="signup-button1">
+          <div class="signup-button-item"></div>
+          <div class="sign-up1">SIGN UP</div>
+        </button>
+        <input class="location-text1" type="text" />
+
+        <div class="location1">Location</div>
+        <input class="gender-text1" type="text" />
+
+        <div class="gender1">Gender</div>
+        <input class="age-text1" type="number" />
+
+        <div class="age1">Age</div>
+        <input class="phone-text1" type="tel" />
+
+        <div class="phone-number1">Phone Number</div>
+        <input class="password-text1" type="password" />
+
+        <div class="password2">Password</div>
+        <input class="email-text2" type="email" />
+
+        <div class="e-mail-address1">E-mail Address</div>
+        <input class="name-text1" type="text" />
+
+        <div class="name1">Name</div>
+        <img class="signup-item" alt="" src="./public/arrow-3.svg" />
+
+        <div class="sign-up2">sign up</div>
+        <img class="signup-inner" alt="" src="./public/arrow-4.svg" />
+      </div>
+      <div class="footer7">
+        <div class="footer-child10"></div>
+        <div class="fleo-inc-all7">©2023 FLEO, INC. All Rights Reserved</div>
+        <div class="footer-child11"></div>
+        <img class="instagram-icon7" alt="" src="./public/instagram@2x.png" />
+
+        <img class="facebook-icon7" alt="" src="./public/facebook@2x.png" />
+
+        <img class="youtube-icon7" alt="" src="./public/youtube@2x.png" />
+
+        <img class="twitter-icon7" alt="" src="./public/twitter@2x.png" />
+
+        <div class="social7">Social</div>
+        <div class="at-fleo-we7">
+          At FLEO, we are committed to providing innovative financial solutions
+          that empower you to seize control of your financial future. Our
+          mission is to assist you in achieving your financial goals with
+          confidence.
+        </div>
+        <div class="fleo9">FLEO</div>
+      </div>
+      <div class="navbar7">
+        <div class="navbar-inner"></div>
+        <a class="login-button2" href="./login.html">
+          <div class="login-button-inner"></div>
+          <div class="login5">login</div>
+        </a>
+        <a class="info4" href="./info.html">info</a>
+        <div class="dashboard9">dashboard</div>
+        <a class="about-us2" href="./about.html">about us</a>
+        <a class="home3" href="./index.html">home</a>
+        <a class="fleo10" href="./index.html">FLEO</a>
+      </div>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

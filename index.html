@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mplus 1p:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <header class="home" data-animate-on-scroll>
+      <div class="footer">
+        <div class="footer-child"></div>
+        <div class="cookie-setting">Cookie Setting</div>
+        <div class="privacy-and-cookie">Privacy and Cookie Policy</div>
+        <div class="terms-of-use">Terms of Use</div>
+        <div class="guides">Guides</div>
+        <div class="fleo-inc-all">©2023 FLEO, INC. All Rights Reserved</div>
+        <div class="footer-item"></div>
+        <img class="instagram-icon" alt="" src="./public/instagram@2x.png" />
+
+        <img class="facebook-icon" alt="" src="./public/facebook@2x.png" />
+
+        <img class="youtube-icon" alt="" src="./public/youtube@2x.png" />
+
+        <img class="twitter-icon" alt="" src="./public/twitter@2x.png" />
+
+        <div class="social">Social</div>
+        <button class="subscribe-button">
+          <div class="subscribe-button-child"></div>
+          <div class="subscribe">Subscribe</div>
+        </button>
+        <input class="email-text" type="text" />
+
+        <div class="stay-up-to-date-with">
+          Stay up-to-date with the latest financial insights, news, and
+          exclusive offers by subscribing to our newsletter.
+        </div>
+        <div class="subscribe-to-our">Subscribe to Our Newsletter</div>
+        <div class="at-fleo-we">
+          At FLEO, we are committed to providing innovative financial solutions
+          that empower you to seize control of your financial future. Our
+          mission is to assist you in achieving your financial goals with
+          confidence.
+        </div>
+        <div class="fleo">FLEO</div>
+      </div>
+      <main class="content">
+        <img class="content-child" alt="" src="./public/ellipse-81.svg" />
+
+        <div class="content-item"></div>
+        <img class="content-inner" alt="" src="./public/ellipse-6.svg" />
+
+        <div class="ellipse-div"></div>
+        <div class="content-child1"></div>
+        <div class="predictive-insights">Predictive Insights</div>
+        <div class="our-predictive-ai">
+          Our predictive AI can forecast future financial scenarios, helping you
+          plan and strategize. Wondering how a major purchase or investment
+          might impact your finances? Our system can show you.
+        </div>
+        <img class="img5-icon" alt="" src="./public/img5@2x.png" />
+
+        <div class="say-goodbye-to-container">
+          <p class="say-goodbye-to">
+            Say goodbye to generic financial advice. Our AI tailors
+            recommendations to your unique financial situation and goals.
+            Whether you're saving for retirement, buying a home, or paying off
+            debt, we've got you covered.
+          </p>
+        </div>
+        <div class="personalized-recommendations">
+          Personalized Recommendations
+        </div>
+        <img class="img4-icon" alt="" src="./public/img4@2x.png" />
+
+        <div class="our-ai-algorithms">
+          Our AI algorithms analyze your financial data in real-time, providing
+          you with a comprehensive view of your financial health. Understand
+          where your money is going, identify spending trends, and make
+          data-driven decisions.
+        </div>
+        <div class="smart-financial-analysis">Smart Financial Analysis</div>
+        <img class="img3-icon" alt="" src="./public/img3@2x.png" />
+
+        <div class="in-todays-fast-paced">
+          In today's fast-paced financial landscape, making informed decisions
+          about your money is more crucial than ever. That's why our Financial
+          Money Management System leverages cutting-edge artificial intelligence
+          (AI) to empower you with unparalleled financial insights and control.
+          Here's how our AI-driven platform can transform the way you manage
+          your finances:
+        </div>
+        <b class="ai-powered-financial-insights"
+          >AI-powered financial insights</b
+        >
+        <img class="img2-icon" alt="" src="./public/img2@2x.png" />
+      </main>
+      <div class="hero">
+        <img class="img1-icon" alt="" src="./public/img1@2x.png" />
+
+        <div class="explore-now-button">
+          <div class="explore-now-button-child"></div>
+          <div class="explore-now-button-item"></div>
+          <div class="explore-now">Explore now</div>
+        </div>
+        <a class="get-started-button" href="./signup.html">
+          <div class="get-started-button-child"></div>
+          <div class="get-started">
+            <span class="get">get</span>
+            <span class="span"> </span>
+            <span class="get">started</span>
+          </div>
+        </a>
+        <div class="discover-the-power">
+          Discover the power of data-driven financial insights with FLEO. We
+          provide personalized financial analysis and expert recommendations to
+          help you achieve your financial goals faster and smarter.
+        </div>
+        <b class="unlock-and-empower">unlock and empower your finance</b>
+      </div>
+      <div class="navbar">
+        <a class="login-button" href="./login.html">
+          <div class="login-button-child"></div>
+          <div class="login">login</div>
+        </a>
+        <a class="info" href="./info.html">info</a>
+        <div class="dashboard">dashboard</div>
+        <a class="about-us" href="./about.html">about us</a>
+        <div class="navbar-child"></div>
+        <div class="home1">home</div>
+        <a class="fleo1">FLEO</a>
+      </div>
+    </header>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

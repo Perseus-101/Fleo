@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./financial-info.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mplus 1p:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="financial-info2" data-animate-on-scroll>
+      <div class="footer3">
+        <div class="footer-child2"></div>
+        <div class="fleo-inc-all3">©2023 FLEO, INC. All Rights Reserved</div>
+        <div class="footer-child3"></div>
+        <img class="instagram-icon3" alt="" src="./public/instagram@2x.png" />
+
+        <img class="facebook-icon3" alt="" src="./public/facebook@2x.png" />
+
+        <img class="youtube-icon3" alt="" src="./public/youtube@2x.png" />
+
+        <img class="twitter-icon3" alt="" src="./public/twitter@2x.png" />
+
+        <div class="social3">Social</div>
+        <div class="at-fleo-we3">
+          At FLEO, we are committed to providing innovative financial solutions
+          that empower you to seize control of your financial future. Our
+          mission is to assist you in achieving your financial goals with
+          confidence.
+        </div>
+        <div class="fleo4">FLEO</div>
+      </div>
+      <div class="info1">
+        <input class="savings-text" type="text" />
+
+        <div class="savings">Savings</div>
+        <div class="account-type">Account Type</div>
+        <input class="currency-text" type="text" />
+
+        <div class="rupees">Rupees</div>
+        <div class="currency">Currency</div>
+        <input class="amount-text" type="text" />
+
+        <div class="div5">35000</div>
+        <div class="amount">Amount</div>
+        <input class="category-text" type="number" />
+
+        <div class="income">Income</div>
+        <div class="category">Category</div>
+        <input class="description-text" type="tel" />
+
+        <div class="description">Description</div>
+        <input class="transaction-text" type="email" />
+
+        <div class="div6">23-8-2023</div>
+        <div class="transaction-date">Transaction Date</div>
+        <input class="data-text" type="text" />
+
+        <div class="div7">109345</div>
+        <div class="data-id">Data ID</div>
+      </div>
+      <div class="sidebar2">
+        <div class="background2"></div>
+        <a class="logout-button2" href="./index.html">
+          <div class="logout-button-inner"></div>
+          <b class="log-out2">LOG OUT</b>
+        </a>
+        <a class="preferences2" href="./preference.html">Preferences</a>
+        <a class="portfolio6" href="./portfolio.html">Portfolio</a>
+        <a class="financial-info3">Financial Info</a>
+        <a class="personal-info2" href="./personal-info.html">Personal Info</a>
+        <a class="dashboard3" href="./dashboard.html">Dashboard</a>
+        <div class="percygmailcom2">percy@gmail.com</div>
+        <div class="percy2">Percy</div>
+        <div class="profile-pic2"></div>
+        <img class="sidebar-inner" alt="" src="./public/line-31.svg" />
+      </div>
+      <div class="navbar3">
+        <a class="contact-button2">
+          <div class="contact-button-inner"></div>
+          <b class="contact-support2">Contact Support</b>
+        </a>
+        <div class="financial-info4">Financial Info</div>
+      </div>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

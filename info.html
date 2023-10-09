@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./info.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mplus 1p:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="info5" data-animate-on-scroll>
+      <div class="info6">
+        <div class="info-child"></div>
+        <div class="info-item"></div>
+        <div class="lorem-ipsum-dolor">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant
+          morbi tristique senectus et netus. Eget nulla facilisi etiam
+          dignissim. Praesent elementum facilisis leo vel fringilla. Hac
+          habitasse platea dictumst quisque sagittis purus. Consequat interdum
+          varius sit amet mattis vulputate enim. Massa sed elementum tempus
+          egestas. Porttitor massa id neque aliquam vestibulum morbi. Volutpat
+          commodo sed egestas egestas fringilla. Urna id volutpat lacus laoreet
+          non curabitur gravida. Habitant morbi tristique senectus et netus et.
+          Dui ut ornare lectus sit amet. Vitae congue eu consequat ac felis
+          donec et odio pellentesque. Rutrum tellus pellentesque eu tincidunt
+          tortor. Mattis vulputate enim nulla aliquet. Iaculis at erat
+          pellentesque adipiscing. Id interdum velit laoreet id donec. Libero
+          volutpat sed cras ornare arcu dui. Elementum facilisis leo vel
+          fringilla est. At erat pellentesque adipiscing commodo elit at
+          imperdiet dui.
+        </div>
+        <img class="info-inner" alt="" src="./public/arrow-32.svg" />
+
+        <div class="info7">info</div>
+        <img class="info-child1" alt="" src="./public/arrow-42.svg" />
+      </div>
+      <div class="footer8">
+        <div class="footer-child12"></div>
+        <div class="fleo-inc-all8">©2023 FLEO, INC. All Rights Reserved</div>
+        <div class="footer-child13"></div>
+        <img class="instagram-icon8" alt="" src="./public/instagram@2x.png" />
+
+        <img class="facebook-icon8" alt="" src="./public/facebook@2x.png" />
+
+        <img class="youtube-icon8" alt="" src="./public/youtube@2x.png" />
+
+        <img class="twitter-icon8" alt="" src="./public/twitter@2x.png" />
+
+        <div class="social8">Social</div>
+        <div class="at-fleo-we8">
+          At FLEO, we are committed to providing innovative financial solutions
+          that empower you to seize control of your financial future. Our
+          mission is to assist you in achieving your financial goals with
+          confidence.
+        </div>
+        <div class="fleo11">FLEO</div>
+      </div>
+      <div class="navbar8">
+        <a class="login-button3" href="./login.html">
+          <div class="login-button-child1"></div>
+          <div class="login6">login</div>
+        </a>
+        <div class="navbar-child1"></div>
+        <div class="info8">info</div>
+        <div class="dashboard10">dashboard</div>
+        <a class="about-us3" href="./about.html">about us</a>
+        <a class="home4" href="./index.html">home</a>
+        <a class="fleo12" href="./index.html">FLEO</a>
+      </div>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>
